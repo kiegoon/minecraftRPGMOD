@@ -19,8 +19,8 @@ jobs:
           java-version: 21
           distribution: temurin
 
-      - name: 🛠️ Gradle 실행 권한 부여
-        run: chmod +x ./gradlew
+      - name: 🧼 gradle-wrapper.jar 실행 권한 추가
+        run: chmod +x ./gradle/wrapper/gradle-wrapper.jar
 
       - name: 🚧 Fabric 모드 빌드
         run: ./gradlew build
